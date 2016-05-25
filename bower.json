@@ -14,5 +14,19 @@
     "angular-mocks": "^1.4.0"
   },
   "appPath": "app",
-  "moduleName": "centroEureApp"
+  "moduleName": "centroEureApp",
+  "homepage": "https://github.com/rafastaria/CentroEure",
+  "authors": [
+    "jose2802"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }
