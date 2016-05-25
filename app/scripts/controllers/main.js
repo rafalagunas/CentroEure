@@ -11,3 +11,5 @@ angular.module('centroEureApp')
   .controller('MainCtrl', function () {
   	var vm = this;
   });
+
+  
