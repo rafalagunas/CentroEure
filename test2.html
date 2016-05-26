@@ -25,10 +25,10 @@
                   
                   <img src="http://www.centroeure.org.mx/images/template/centro_eure.png" style="width:195px;height:50px; ">
                   <div class="rightcontent">
-                    <p  style="margin-left: 20px;">HOME</p>
+                    <p  class="btn btn-2" style="margin-left: 20px;">HOME</p>
                     <md-menu-bar class="buttondrop" style="margin-left: 35px;">
                      <md-menu>
-                        <p  ng-click="$mdOpenMenu()" >QUIENES SOMOS▾</p>
+                        <p  class="btn btn-2" ng-click="$mdOpenMenu()" >QUIENES SOMOS▾</p>
                         <md-menu-content>
                            <md-menu-item>
                               <p>link 1</p>
@@ -46,11 +46,11 @@
                      </md-menu>
                     </md-menu-bar>
 
-                    <p  style="margin-left: 24px;">SERVICIOS</p>
-                    <p  style="margin-left: 31px;">PROYECTOS</p>
+                    <p class="btn btn-2"  style="margin-left: 24px;">SERVICIOS</p>
+                    <p class="btn btn-2"  style="margin-left: 31px;">PROYECTOS</p>
                     <md-menu-bar class="buttondrop" style="margin-left: 32px;">
                      <md-menu>
-                        <p  ng-click="$mdOpenMenu()" >PUBLICACIONES▾</p>
+                        <p  class="btn btn-2" ng-click="$mdOpenMenu()" >PUBLICACIONES▾</p>
                         <md-menu-content>
                            <md-menu-item>
                               <p>link 1</p>
@@ -69,7 +69,7 @@
                     </md-menu-bar>
                     <md-menu-bar class="buttondrop" style="margin-left: 31px;">
                      <md-menu>
-                        <p  ng-click="$mdOpenMenu()" >BIBLIOTECA▾</p>
+                        <p  class="btn btn-2" ng-click="$mdOpenMenu()" >BIBLIOTECA▾</p>
                         <md-menu-content>
                            <md-menu-item>
                               <p>link 1</p>
@@ -104,18 +104,7 @@
 </html>
 
 <style>
-    .rightcontent p{
-      display: inline-block;
-      font-size: 13px;
-      font-family: Arial; 
-      font-weight: bold;
-    }
-    .rightcontent p:hover{
-      /*background-color: #3e8e41;*/
-      text-decoration: underline;
-      color:#C46868;
-      cursor: pointer;
-    }
+    
 
     .rightcontent{
       margin-top: 7px;
@@ -127,10 +116,47 @@
       padding: 0;
       display: inline-block;
     }
-    .buttondrop p:hover {
-      /*background-color: #3e8e41;*/
-      text-decoration: underline;
+
+
+
+
+     .btn {
+       display: inline-block;
+      font-size: 13px;
+      font-family: Arial; 
+      font-weight: bold;
+
+       color:white;
+       cursor: pointer;
+       transition-duration: 0.4s;
+       
+     }
+
+    .btn-2:after,
+    .btn-2:before {
+      backface-visibility: hidden;
+      border-bottom: 2px solid #C46868;
+      bottom: 0px;
+      content: " ";
+      display: block;
+      margin: 0 auto;
+      position: relative;
+      transition: all 280ms ease-in-out;
+      width: 0;
+    }
+    
+    .btn-2:hover:after,
+    .btn-2:hover:before {
+      backface-visibility: hidden;
+      border-color: #C46868;
+      transition: width 350ms ease-in-out;
+      width: 100%;
+    }
+    .btn-2:hover:before {
+      width: 0%;
+    }
+
+    .btn:hover{
       color:#C46868;
-      cursor: pointer;
     }
 </style>
