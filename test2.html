@@ -1,0 +1,45 @@
+<html lang="en" >
+   <head>
+      <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <script language="javascript">
+         angular
+            .module('firstApplication', ['ngMaterial'])
+            
+      </script>      
+   </head>
+   <body ng-app="firstApplication"> 
+
+      <div id="toolbarContainer" layout="column" ng-cloak>
+         <md-content >
+            <md-toolbar   flex style="background-color: gray; height: 110px; position: fixed" >
+
+               <div class="md-toolbar-tools">
+                  <md-button class="md-icon-button" aria-label="Settings">
+                     <md-icon class="material-icons">menu</md-icon>
+                  </md-button>
+                  <h2>
+                     <span>Contacts</span>
+                  </h2>
+                  <span flex></span>
+                  <md-button class="md-icon-button" aria-label="More">
+                     <md-icon class="material-icons">more_vert</md-icon>
+                  </md-button>
+               </div>
+
+            </md-toolbar>
+           
+         </md-content>   
+      </div>
+   </body>
+
+</html>
+
+<style>
+
+</style>
