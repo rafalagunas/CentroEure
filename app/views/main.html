@@ -1,43 +1,225 @@
-<section layout="row" layout-align="left" class="head">	 
-<div id="Euron">
-<img src="images/Eure.png" alt="I'm Euron">	
-</div>
- <p class="inicio">HOME</p>
- <div class="dropdown">
- <p class="inicio">QUIÉNES SOMOS▼</p>
- <div class="dropdown-content">
-    <a href="">Link 1</a>
-    <a href="">Link 2</a>
-    <a href="">Link 3</a>
-  </div>
- </div>
- <p class="inicio">SERVICIOS</p> 
- <p class="inicio">PROYECTOS</p> 
-  <div class="dropdown">
- <p class="inicio">PUBLICACIONES▼</p> 
- <div class="dropdown-content">
-    <a href="">Link 1</a>
-    <a href="">Link 2</a>
-    <a href="">Link 3</a>
-  </div>
- </div>
-  <div class="dropdown">
- <p class="inicio">BIBLIOTECA▼</p> 
-<div class="dropdown-content">
-    <a href="">Link 1</a>
-    <a href="">Link 2</a>
-    <a href="">Link 3</a>
-  </div>
- </div>
-<md-button id="contacto">CONTACTO</md-button>  
-<div id="search">
-<img src="images/search.png">	
-</div>
-  </section>         
-  <section class="body">
-	<img src="images/map.png" id="map">
-  </section>
+<html lang="en" >
+   
+   
+   
+   <head>
+   
+      <meta charset="utf-8"/>
+   
+   </head>
+   <body ng-app="firstApplication"> 
 
-<section class="body2">
-	<h1>hola bores</h1>
-</section>
+
+      <div id="toolbarContainer" layout="column" ng-cloak>
+         <md-content >
+            <md-toolbar   style="background-color: white; height: 110px; position: fixed; " >
+
+               <div class="md-toolbar-tools" style="margin-top:20px; margin-left: 50px; ">
+
+                  
+                  <img src="http://www.centroeure.org.mx/images/template/centro_eure.png" style="width:195px;height:50px; ">
+                  <div class="rightcontent">
+                    <p  style="margin-left: 20px; color:black;">HOME</p>
+                    <md-menu-bar class="buttondrop" style="margin-left: 35px;">
+                     <md-menu>
+                        <p  ng-click="$mdOpenMenu()" style="color:black" >QUIENES SOMOS▾</p>
+                        <md-menu-content>
+                           <md-menu-item>
+                              <p>CV CENTRO EURE</p>
+                           </md-menu-item>
+                           <md-menu-divider></md-menu-divider>
+                           <md-menu-item>
+                              <p>EQUIPO DE TRABAJO</p>
+                           </md-menu-item>
+                           <md-menu-divider></md-menu-divider>
+                            <md-menu-item>
+                              <p>ALIANZAS</p>
+                           </md-menu-item>
+                           <md-menu-divider></md-menu-divider>
+                           <md-menu-item>
+                              <p>CONTACTO</p>
+                           </md-menu-item>
+                        </md-menu-content>
+                     </md-menu>
+                    </md-menu-bar>
+
+                    <p  style="margin-left: 24px; color:black;">SERVICIOS</p>
+                    <p  style="margin-left: 31px; color:black;">PROYECTOS</p>
+                    <md-menu-bar class="buttondrop" style="margin-left: 32px;">
+                     <md-menu>
+                        <p  ng-click="$mdOpenMenu()" style="color:black;" >PUBLICACIONES▾</p>
+                        <md-menu-content>
+                           <md-menu-item>
+                              <p>link 1</p>
+                           </md-menu-item>
+                           <md-menu-divider></md-menu-divider>
+                           <md-menu-item>
+                              <p>link 2</p>
+                           </md-menu-item>
+                           <md-menu-divider></md-menu-divider>
+                            <md-menu-item>
+                              <p>link 3</p>
+                           </md-menu-item>
+                           <md-menu-divider></md-menu-divider>
+                        </md-menu-content>
+                     </md-menu>
+                    </md-menu-bar>
+                    <md-menu-bar class="buttondrop" style="margin-left: 31px;">
+                     <md-menu>
+                        <p  ng-click="$mdOpenMenu()" style="color:black" >BIBLIOTECA▾</p>
+                        <md-menu-content>
+                           <md-menu-item>
+                              <p>link 1</p>
+                           </md-menu-item>
+                           <md-menu-divider></md-menu-divider>
+                           <md-menu-item>
+                              <p>link 2</p>
+                           </md-menu-item>
+                           <md-menu-divider></md-menu-divider>
+                            <md-menu-item>
+                              <p>link 3</p>
+                           </md-menu-item>
+                           <md-menu-divider></md-menu-divider>
+                        </md-menu-content>
+                     </md-menu>
+                    </md-menu-bar>
+                  </div>
+
+                  <md-button aria-label="More"  style="background-color: #C46868;  margin-left: 125px; margin-top:8px; ">
+                      <p style="color:white; font-size: 14px; font-family: Arial; font-weight: bold; margin: 2px 15px;">CONTACTO</p>
+                  </md-button>
+               </div>
+            </md-toolbar>
+         </md-content>   
+      </div>
+
+
+
+     
+      <div id="Texto slide" style="background-image:url(map.jpg); background-position:fixed;" >
+
+        
+
+
+         <p style ="color:white;margin-left: 275px; margin-top:310px; font-size: 70px;font-weight: bold;">Programa Metropolitano  <br/>
+
+          <span style ="color:white;margin-left: -40px; margin-top:200px; font-size: 55px; font-weight: bold;">para Mérida y sus zonas conurbadas</span>
+
+         </p>
+
+
+          <p style="color: white;margin-left: 250px; font-size: 28px; margin-top: -60px">
+               Identifica los grandes problemas y potenciales de la zona y propone <br/>
+               una estrategia integrada y de largo plazo para su desarrollo así como <br/>
+               los proyectos estratégicos y los instrumentos para ejecutarla, desde la <br/>
+                                  
+             <center style="color:white;font-size: 28px; margin-top:-25px">  óptica de las sustentabilidad</center>
+          
+          </p>
+
+         </div>
+
+         <md-button aria-label="More" style="border-radius:7px; height: 50px;width:150px ;background-color:#A80000; margin-left: 600px">
+
+         <p style="font-family:Arial; color:white; font-size:15px; font-weight:bold">LEER MÁS</p>
+
+         </md-button>
+
+
+         </div>
+
+
+         <div id="CentroEure">
+
+           <p style="font-family:Arial; color:#404040 ; font-size: 30px; font-weight:bold; margin-left:590px; margin-top:290px"> Centro Eure</p>
+
+    
+           <hr style="margin-top:-25px" noshade="noshade" color="#A80000" size="2.5px" width="20%" />
+
+
+           <p style="color: grey; font-family:Arial; font-size: 20px; margin-left:250px; margin-top:45px; ">
+              Es una sociedad civil con 30 años de experiencia, dedicada a la investigación aplicada, así como a la<br/> &nbsp;&nbsp;&nbsp;asesoría y consultoría especializadas y a la formación y divulgación del conocimiento en Estudios <br/><br/>
+
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Territoriales, planeación y evolución de políticas públicas.<br/>
+              Es un espacio de análisis, reflexión y diálogo y de formulación de propuestas sobre los fenómenos y<br/>&nbsp;problemas del desarrollo urbano-metropolitano y regional, del ambiente y en general de la sociedad.
+
+           </p>
+
+
+         <md-button aria-label="More" style=" margin-left:600px;height: 50px; border:solid; width:150px;border-radius:7px; background-color: white; border-color:#003399; border-width:2.5px" >
+
+            <p style="color:#003399;" >  LEER MÁS </p>
+
+         </md-button>
+
+
+         </div>
+
+         <div id="gpart">
+
+
+         <h1 style="font-family:Arial; color:#404040 ; font-size: 30px; font-weight:bold; margin-left:490px; margin-top:100px"> Áreas de Especialización</h1>
+
+         <hr style="margin-top:-15px" noshade="noshade" color="#A80000" size="2.5px" width="18%" />
+
+
+   <!-- Insertar imagenes-->
+
+         <p style="color: grey; font-weight:bold; font-size: 17px; margin-left:200px; margin-top: 200px"> DESARROLLO URBANO - <br/> &nbsp;&nbsp;&nbsp;METROPOLITANO: </p>
+
+
+          <p style="color: grey; font-weight:bold; font-size: 17px; margin-left:625px; margin-top: -57px"> DESARROLLO<br/>&nbsp;&nbsp;&nbsp;REGIONAL </p>
+
+
+           <p style="color: grey; font-weight:bold; font-size: 17px; margin-left:950px; margin-top: -57px">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ESTUDIOS Y <br/>ESTRATEGIAS ESPECIFICAS </p>
+
+         
+         <!-- Comienzan segundos, insertar imagenes-->
+
+          <p style="color: grey; font-weight:bold; font-size: 17px; margin-left:250px; margin-top: 200px"> POLITICA <br/>&nbsp;PUBLICA </p>
+
+           <p style="color: grey; font-weight:bold; font-size: 17px; margin-left:605px; margin-top: -57px"> INTERVENCIONES<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;URBANAS </p>
+
+           <p style="color: grey; font-weight:bold; font-size: 17px; margin-left:990px; margin-top: -57px"> SISTEMAS DE INFO.<br/>&nbsp;&nbsp;&nbsp;GEOGRÁFICA<br/> &nbsp;&nbsp;&nbsp;E INDICADORES </p>
+
+         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+         <div>
+
+
+            <h1 style="font-family:Arial; color:#404040 ; font-size: 30px; font-weight:bold; margin-left:600px; margin-top:350px"> Actualidad</h1>
+
+          <hr style="margin-top:-15px" noshade="noshade" color="#009933" size="2.5px" width="18%" />
+
+
+          <p style="font-family:Arial; font-weight: bold; color: black; margin-left:280px; margin-top:100px">
+            
+          En la oficina del historiador de La Habana, el Director de Centro EURE ofreció un curso sobre instrum-<br/>mentos de suelo urbano ante la posibilidad de apertura del mercado inmobiliario en Cuba.</p>
+
+
+
+
+
+         </div>
+
+
+
+
+
+
+
+   </body>
+
+</html>
