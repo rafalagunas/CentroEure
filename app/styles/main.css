@@ -1,4 +1,5 @@
 .rightcontent p{
+<<<<<<< HEAD
   display: inline-block;
   font-size: 13px;
   font-family: Arial; 
@@ -31,4 +32,34 @@
   color:#C46868;
   cursor: pointer;
 }
+=======
+      display: inline-block;
+      font-size: 13px;
+      font-family: Arial; 
+      font-weight: bold;
+    }
+    .rightcontent p:hover{
+      /*background-color: #3e8e41;*/
+      text-decoration: underline;
+      color:#C46868;
+      cursor: pointer;
+    }
+
+    .rightcontent{
+      margin-top: 7px;
+      margin-left: 24px;
+    }
+
+    
+    .buttondrop {
+      padding: 0;
+      display: inline-block;
+    }
+    .buttondrop p:hover {
+      /*background-color: #3e8e41;*/
+      text-decoration: underline;
+      color:#C46868;
+      cursor: pointer;
+    }
+>>>>>>> 9a4cf2e951d96e35dbd89840b48062c2dbc85c69
 
