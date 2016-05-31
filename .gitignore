@@ -1,9 +1,5 @@
 /node_modules
-<<<<<<< HEAD
 #/dist
-=======
-/dist
->>>>>>> 9a4cf2e951d96e35dbd89840b48062c2dbc85c69
 /.tmp
 /.sass-cache
 /bower_components

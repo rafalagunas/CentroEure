@@ -12,10 +12,3 @@ angular.module('centroEureApp')
   	var vm = this;
   });
 
-<<<<<<< HEAD
-
-  
-
-=======
->>>>>>> 9a4cf2e951d96e35dbd89840b48062c2dbc85c69
-  
