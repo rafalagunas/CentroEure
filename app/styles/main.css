@@ -1,0 +1,34 @@
+.rightcontent p{
+  display: inline-block;
+  font-size: 13px;
+  font-family: Arial; 
+  font-weight: bold;
+}
+.rightcontent p:hover{
+  /*background-color: #3e8e41;*/
+  text-decoration: underline;
+  color:#C46868;
+  cursor: pointer;
+}
+
+.rightcontent{
+  text-decoration: underline;
+  margin-top: 7px;
+  margin-left: 24px;
+  font-family: arial;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+
+.buttondrop {
+  padding: 0;
+  display: inline-block; 
+}
+.buttondrop p:hover {
+  /*background-color: #3e8e41;*/
+  text-decoration: underline;
+  color:#C46868;
+  cursor: pointer;
+}
+

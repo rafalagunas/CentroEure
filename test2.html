@@ -1,0 +1,136 @@
+<html lang="en" >
+   <head>
+      <meta charset="utf-8"/>
+      <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <script language="javascript">
+         angular
+            .module('firstApplication', ['ngMaterial'])
+            
+      </script>      
+   </head>
+   <body ng-app="firstApplication"> 
+
+      <div id="toolbarContainer" layout="column" ng-cloak>
+         <md-content >
+            <md-toolbar   style="background-color: gray; height: 110px; position: fixed; " >
+
+               <div class="md-toolbar-tools" style="margin-top:20px; margin-left: 50px; ">
+
+                  
+                  <img src="http://www.centroeure.org.mx/images/template/centro_eure.png" style="width:195px;height:50px; ">
+                  <div class="rightcontent">
+                    <p  style="margin-left: 20px;">HOME</p>
+                    <md-menu-bar class="buttondrop" style="margin-left: 35px;">
+                     <md-menu>
+                        <p  ng-click="$mdOpenMenu()" >QUIENES SOMOS▾</p>
+                        <md-menu-content>
+                           <md-menu-item>
+                              <p>link 1</p>
+                           </md-menu-item>
+                           <md-menu-divider></md-menu-divider>
+                           <md-menu-item>
+                              <p>link 2</p>
+                           </md-menu-item>
+                           <md-menu-divider></md-menu-divider>
+                            <md-menu-item>
+                              <p>link 3</p>
+                           </md-menu-item>
+                           <md-menu-divider></md-menu-divider>
+                        </md-menu-content>
+                     </md-menu>
+                    </md-menu-bar>
+
+                    <p  style="margin-left: 24px;">SERVICIOS</p>
+                    <p  style="margin-left: 31px;">PROYECTOS</p>
+                    <md-menu-bar class="buttondrop" style="margin-left: 32px;">
+                     <md-menu>
+                        <p  ng-click="$mdOpenMenu()" >PUBLICACIONES▾</p>
+                        <md-menu-content>
+                           <md-menu-item>
+                              <p>link 1</p>
+                           </md-menu-item>
+                           <md-menu-divider></md-menu-divider>
+                           <md-menu-item>
+                              <p>link 2</p>
+                           </md-menu-item>
+                           <md-menu-divider></md-menu-divider>
+                            <md-menu-item>
+                              <p>link 3</p>
+                           </md-menu-item>
+                           <md-menu-divider></md-menu-divider>
+                        </md-menu-content>
+                     </md-menu>
+                    </md-menu-bar>
+                    <md-menu-bar class="buttondrop" style="margin-left: 31px;">
+                     <md-menu>
+                        <p  ng-click="$mdOpenMenu()" >BIBLIOTECA▾</p>
+                        <md-menu-content>
+                           <md-menu-item>
+                              <p>link 1</p>
+                           </md-menu-item>
+                           <md-menu-divider></md-menu-divider>
+                           <md-menu-item>
+                              <p>link 2</p>
+                           </md-menu-item>
+                           <md-menu-divider></md-menu-divider>
+                            <md-menu-item>
+                              <p>link 3</p>
+                           </md-menu-item>
+                           <md-menu-divider></md-menu-divider>
+                        </md-menu-content>
+                     </md-menu>
+                    </md-menu-bar>
+                  </div>
+
+                  <md-button aria-label="More"  style="background-color: #C46868;  margin-left: 125px; margin-top:8px; ">
+                      <p style="font-size: 14px; font-family: Arial; font-weight: bold; margin: 2px 15px;">CONTACTO</p>
+                  </md-button>
+                  <img src="http://www.clipartbest.com/cliparts/LiK/rGj/LiKrGj84T.png" style="width:25px;height:25px; margin-left:16; ">
+
+               </div>
+
+            </md-toolbar>
+           
+         </md-content>   
+      </div>
+   </body>
+
+</html>
+
+<style>
+    .rightcontent p{
+      display: inline-block;
+      font-size: 13px;
+      font-family: Arial; 
+      font-weight: bold;
+    }
+    .rightcontent p:hover{
+      /*background-color: #3e8e41;*/
+      text-decoration: underline;
+      color:#C46868;
+      cursor: pointer;
+    }
+
+    .rightcontent{
+      margin-top: 7px;
+      margin-left: 24px;
+    }
+
+    
+    .buttondrop {
+      padding: 0;
+      display: inline-block;
+    }
+    .buttondrop p:hover {
+      /*background-color: #3e8e41;*/
+      text-decoration: underline;
+      color:#C46868;
+      cursor: pointer;
+    }
+</style>
