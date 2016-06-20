@@ -1,170 +1,207 @@
+<!DOCTYPE html>
 <html lang="en" >
    
    
    
    <head>
    
-      <meta charset="utf-8"/>
-   
-   </head>
-   <body ng-app="firstApplication" style="overflow-y:visible;overflow-x:hidden;" > 
+       <title>space3</title>
+     <meta charset="utf-8"/>
+      <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-    <style>
-      body {overflow-x:hidden;}
-    </style>
+      <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+      <script>
+           angular
+            .module('firstApplication', ['ngMaterial'])
+      </script>
+  </head>
 
+  <body ng-app="firstApplication">
+    <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////tool bar -->
+     <md-toolbar  layout-align="center center" style="background-color: white; height: 110px;  border-bottom: 3px solid #7CA427;" >
 
-      <div id="toolbarContainer" layout="column" ng-cloak>
-         <md-content >
-            <md-toolbar   style="background-color: white; height: 100px; position: fixed; " >
+         <div  class="md-toolbar-tools" layout="row" >
 
-               <div class="md-toolbar-tools" style="margin-top:20px; margin-left: 50px; ">
+           <div hide-gt-md flex="none">
+             <md-menu-bar class="menu2tool">
+               <md-menu>
 
-                  
-                  <img src="Eure.png" style="width:195px;height:50px; ">
-                  <div class="rightcontent">
-
-                    <a style="margin-left: 20px;color:black;" target="_self"  href="http://localhost:9000/" >HOME</a>
-
-                    <md-menu-bar class="buttondrop" style="margin-left: 35px;">
-                     <md-menu>
-                        <p  ng-click="$mdOpenMenu()" style="color:black" >QUIENES SOMOS▾</p>
-                        <md-menu-content>
-                           <md-menu-item>
-                              <p>CV CENTRO EURE</p>
-                           </md-menu-item>
-                           <md-menu-divider></md-menu-divider>
-                           <md-menu-item>
-                              <p>EQUIPO DE TRABAJO</p>
-                           </md-menu-item>
-                           <md-menu-divider></md-menu-divider>
-                            <md-menu-item>
-                              <p>ALIANZAS</p>
-                           </md-menu-item>
-                           <md-menu-divider></md-menu-divider>
-                           <md-menu-item>
-                              <p>CONTACTO</p>
-                           </md-menu-item>
-                        </md-menu-content>
-                     </md-menu>
-                    </md-menu-bar>
-
-                    <p  style="margin-left: 24px; color:black;">SERVICIOS</p>
-                    <p  style="margin-left: 31px; color:black;">PROYECTOS</p>
-                    <md-menu-bar class="buttondrop" style="margin-left: 32px;">
-                     <md-menu>
-                        <p  ng-click="$mdOpenMenu()" style="color:black;" >PUBLICACIONES▾</p>
-                        <md-menu-content>
-                           <md-menu-item>
-                              <p>link 1</p>
-                           </md-menu-item>
-                           <md-menu-divider></md-menu-divider>
-                           <md-menu-item>
-                              <p>link 2</p>
-                           </md-menu-item>
-                           <md-menu-divider></md-menu-divider>
-                            <md-menu-item>
-                              <p>link 3</p>
-                           </md-menu-item>
-                           <md-menu-divider></md-menu-divider>
-                        </md-menu-content>
-                     </md-menu>
-                    </md-menu-bar>
-                    <md-menu-bar class="buttondrop" style="margin-left: 31px;">
-                     <md-menu>
-                        <p  ng-click="$mdOpenMenu()" style="color:black" >BIBLIOTECA▾</p>
-                        <md-menu-content>
-                           <md-menu-item>
-                              <p>link 1</p>
-                           </md-menu-item>
-                           <md-menu-divider></md-menu-divider>
-                           <md-menu-item>
-                              <p>link 2</p>
-                           </md-menu-item>
-                           <md-menu-divider></md-menu-divider>
-                            <md-menu-item>
-                              <p>link 3</p>
-                           </md-menu-item>
-                           <md-menu-divider></md-menu-divider>
-                        </md-menu-content>
-                     </md-menu>
-                    </md-menu-bar>
-                  </div>
-
-                  <md-button aria-label="More"  style="background-color: #C46868;  margin-left: 125px; margin-top:8px; ">
-                      <p style="color:white; font-size: 14px; font-family: Arial; font-weight: bold; margin: 2px 15px;">CONTACTO</p>
+                  <md-button class="md-icon-button md-primary" ng-click="$mdOpenMenu()" aria-label="Settings" style="background-color: white; " >
+                    <md-icon style=" color: rgba(0, 0, 0, 1); padding:0;" class="material-icons">menu</md-icon>
                   </md-button>
-               </div>
-            </md-toolbar>
-         </md-content>   
-      </div>
-     
-     
-      <div id="Textoslide" style="background-image:url(map.jpg);margin-top:-450px; background-position:absolute;">
-        
 
-          <span><br/><br/><br/><br/><br/><br/><br/></span>
+                  <md-menu-content width="3" >
+                     <md-menu-item>
+                         <md-button class="menu2btn"><p>HOME</p></md-button>
+                     </md-menu-item>
+                     
+                     <md-menu-item>
+                         <md-button class="menu2btn"><p>QUIENES SOMOS</p></md-button>
+                     </md-menu-item>
+                     
+                     <md-menu-item>
+                         <md-button class="menu2btn"><p>SERVICIOS</p></md-button>
+                     </md-menu-item>
+                     
+                     <md-menu-item>
+                         <md-button class="menu2btn"><p>PROYECTOS</p></md-button>
+                     </md-menu-item>
+                     
+                     <md-menu-item>
+                         <md-button class="menu2btn"><p>PUBLICACIONES</p></md-button>
+                     </md-menu-item>
+                     
+                     <md-menu-item>
+                         <md-button class="menu2btn"><p>BIBLIOTECA</p></md-button>
+                     </md-menu-item>
+                     
+                     <md-menu-divider hide show-xs></md-menu-divider>
+                     <md-menu-item hide show-xs>
+                         <md-button class="menu2btn"style="background-color:#A51716;"><p style="color: white; font-size: 14px;">CONTACTO</p></md-button>
+                     </md-menu-item>
+                     
+                     
+                  </md-menu-content>
+               </md-menu>
+              </md-menu-bar>
+           </div>
 
-         <p style =" position:inherit;color:white;margin-left: 275px; margin-top:550px; font-size: 70px;font-weight: bold;">Programa Metropolitano  <br/>
+           <div flex ="20" flex-md="90" flex-sm="90" flex-xs="90">
+             <md-button  style="background-color: white;" ><img src="http://www.centroeure.org.mx/images/template/centro_eure.png" style="width:195px;height:50px; "></md-button>
+           </div>
 
-          <span style ="color:white;margin-left: -40px; margin-top:200px; font-size: 55px; font-weight: bold;">para Mérida y sus zonas conurbadas</span>
+           <div class="menu1tool" flex="70" layout="row" hide show-gt-md>
+            <p class="btn btn-2">HOME</p>
 
-         </p>
+             <md-menu-bar class="buttondrop" >
+              <md-menu >
+                 <p  ng-click="$mdOpenMenu()" class="btn btn-2" >QUIENES SOMOS▾</p>
+                 <md-menu-content >
+                    <md-menu-item>
+                        <md-button><p>link</p></md-button>
+                    </md-menu-item>
+                    <md-menu-divider></md-menu-divider>
+                    <md-menu-item>
+                        <md-button><p>link</p></md-button>
+                    </md-menu-item>
+                    <md-menu-divider></md-menu-divider>
+                    <md-menu-item>
+                        <md-button><p>link</p></md-button>
+                    </md-menu-item>
+                    <md-menu-divider></md-menu-divider>
+                 </md-menu-content>
+              </md-menu>
+            </md-menu-bar>
 
+            <p class="btn btn-2">SERVICIOS</p>
+            <p class="btn btn-2">PROYECTOS</p>
 
-          <p style="color:white;margin-left: 250px; font-size: 28px; margin-top: -60px">
-               Identifica los grandes problemas y potenciales de la zona y propone <br/>
-               una estrategia integrada y de largo plazo para su desarrollo así como <br/>
-               los proyectos estratégicos y los instrumentos para ejecutarla, desde la <br/>
-                                  
-             <center style="position:absolute;margin-left:500px;color:white;font-size: 28px; margin-top:-25px">  óptica de las sustentabilidad</center>
+             <md-menu-bar class="buttondrop" >
+              <md-menu >
+                 <p  ng-click="$mdOpenMenu()" class="btn btn-2" >PUBLICACIONES▾</p>
+                 <md-menu-content >
+                    <md-menu-item>
+                        <md-button><p>link</p></md-button>
+                    </md-menu-item>
+                    <md-menu-divider></md-menu-divider>
+                    <md-menu-item>
+                        <md-button><p>link</p></md-button>
+                    </md-menu-item>
+                    <md-menu-divider></md-menu-divider>
+                    <md-menu-item>
+                        <md-button><p>link</p></md-button>
+                    </md-menu-item>
+                    <md-menu-divider></md-menu-divider>
+                 </md-menu-content>
+              </md-menu>
+            </md-menu-bar>            
 
+             <md-menu-bar class="buttondrop" >
+              <md-menu >
+                 <p  ng-click="$mdOpenMenu()" class="btn btn-2" >BIBLIOTECA▾</p>
+                 <md-menu-content >
+                    <md-menu-item>
+                        <md-button><p>link</p></md-button>
+                    </md-menu-item>
+                    <md-menu-divider></md-menu-divider>
+                    <md-menu-item>
+                        <md-button><p>link</p></md-button>
+                    </md-menu-item>
+                    <md-menu-divider></md-menu-divider>
+                    <md-menu-item>
+                        <md-button><p>link</p></md-button>
+                    </md-menu-item>
+                    <md-menu-divider></md-menu-divider>
+                 </md-menu-content>
+              </md-menu>
+            </md-menu-bar> 
+           </div>
 
-              <md-button aria-label="More" style="border-radius:7px; height: 50px;width:150px ;background-color:#A80000;margin-top:40px; margin-left: 600px">
+           <div flex="none" layout="row">
+             <md-button  hide-xs style="background-color: #A51716;"><p style="font-size: 14px; font-family: Arial; font-weight: bold; margin: 2px 15px; color: white;">CONTACTO</p></md-button>
 
-               <p style="font-family:Arial; color:white; font-size:15px; font-weight:bold">LEER MÁS</p>
-
-         </md-button>
-
-
-<!--
-
-
-        <md-button aria-label="More" class="w3-center w3section we-large w3-text-white w3-display-middle" style="border-radius:7px; height: 90px;width:120px ;background-color:#45D331;margin-top:-140px;position:absolute; margin-left:619px">
-
-               <p class="material-icons" style="color:black">SIG</p>
-
-         </md-button>
-
-          
-
-        <md-button aria-label="More" class="w3-center w3section we-large w3-text-white w3-display-middle" style="border-radius:7px; height: 90px;width:120px ;background-color:#45D331;margin-top:-140px;position:absolute; margin-left:-762px">
-
-               <p class="material-icons" style="color:black">PREV</p>
-
-         </md-button>
-         
--->
-
-              <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-
-          
-          </p>
+             <md-button class="md-icon-button md-primary" aria-label="Settings" style="background-color: white; ">
+               <md-icon style=" color: rgba(0, 0, 0, 1); " class="material-icons">search</md-icon>
+             </md-button>
+           </div>
 
          </div>
+     </md-toolbar>
 
+
+        <!-- Termina toolbar -->
+
+<div   flex="90">
+          <div class="w3-display-bottommiddle " >
+              <h1 class="md-display-3">Programa Metropolitano</h1>
+              <h2 class="md-display-2">para Mérida Y sus zonas conurbadas</h2>
+              <div style="text-align:center;   margin-top:34px;  font-family: Arial;">
+                 <p class="md-headline" style="margin:0">Identifica los grandes problemas y potenciales de la zona y propone 
+                 <br>una estrategia integrada y de largo plazo para su desarrollo asi como 
+                 <br>los proyectos estrategicos y los instrumentos para ejecutarla, desde la
+                 <br>optica de la sustentabilidad</p>
+                 
+                 <md-button  hide show-gt-md style="border-radius: 7px; background-color: #A51716;   margin-top:27px;">
+                   <p style="font-size: 14px; font-family: Arial; font-weight: bold; margin: 8px 39px; color: white;" >LEER MÁS</p>
+                </md-button>
+                <md-button  hide-gt-md style="border-radius: 6px;background-color: #A51716;   margin-top:18px;">
+                   <p style="font-size: 14px; font-family: Arial; font-weight: bold; margin: 4px 12px; color: white;" >LEER MÁS</p>
+                </md-button>
+
+              </div>
+              
+          </div>
         
+          <div hide show-gt-md class="w3-center w3-section w3-large w3-text-white w3-display-middle" style="width:100%; height:55%; position:absolute;top:92.5%">
+            
+            <md-button aria-label="More"  class="w3-left  w3-text-white w3-hover-text-khaki" onclick="plusDivs(-1)" style="background-color: #7CA427; right:9px;">
+                <p class="material-icons">navigate_before</p>
+            </md-button>
+            <md-button aria-label="More" class="w3-right  w3-text-white w3-hover-text-khaki" onclick="plusDivs(1)" style="background-color: #7CA427; left:8px; ">
+              <p class="material-icons" >navigate_next</p>
+            </md-button>
+          </div>
+          </div>
 
-         </div>
+          
+          
+    </md-content>
+       
 
-         <div>
-          <hr style="background-color:#45D331; margin-top:-30px; ;width:100%; height:50px">  
+         <div class="hr">
+          <hr>  
          </div>
          
 
          <div id="CentroEure">
 
-           <p style="font-family:Arial; color:#404040 ; font-size: 30px; font-weight:bold; margin-left:590px; margin-top:50px"> Centro Eure</p>
+           <p style="font-family:Arial; color:#404040 ; font-size: 30px; font-weight:bold; margin-left:590px; margin-top:100px"> Centro Eure</p>
 
     
            <hr style="position:absolute;margin-left:610px;margin-top:-25px" noshade="noshade" color="#A80000" size="2.5px" width="10%" />
@@ -172,25 +209,6 @@
 
            <p style="color: grey; font-family:Arial; font-size: 20px; margin-left:250px; margin-top:45px; ">
               Es una sociedad civil con 30 años de experiencia, dedicada a la investigación aplicada, así como a la<br/> &nbsp;&nbsp;&nbsp;asesoría y consultoría especializadas y a la formación y divulgación del conocimiento en Estudios <br/><br/>
-
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Territoriales, planeación y evolución de políticas públicas.<br/>
-              Es un espacio de análisis, reflexión y diálogo y de formulación de propuestas sobre los fenómenos y<br/>&nbsp;problemas del desarrollo urbano-metropolitano y regional, del ambiente y en general de la sociedad.
-
-           </p>
-
-
-         <md-button aria-label="More" style=" margin-left:600px;height: 50px; border:solid; width:150px;border-radius:7px; background-color: white; border-color:#003399; border-width:2.5px" >
-
-            <p style="color:#003399;" >  LEER MÁS </p>
-
-
-         </md-button>
-
-          <br/><br/><br/><br/>
-
-         </div>
-
-         <div id="gpart" style="background-color:#F9F9F9">
 
           <br/><br/><br/><br/>
 
@@ -382,21 +400,14 @@
              <a style="margin-top:-55px;margin-left:1055px;position:absolute;color:white ;font-weight: bold; font-family: arial;size:2px; text-decoration:none" href="http://localhost:9000/" target="_self"">
                    Proyectos
             </a>
-
-
              <a style="margin-top:-55px;margin-left:1140px;position:absolute;color:white ;font-weight: bold; font-family: arial;size:2px; text-decoration:none" href="http://localhost:9000/" target="_self">
                    Publicaciones
             </a>
-
-
              <a style="margin-top:-55px;margin-left:1255px;position:absolute;color:white ;font-weight: bold; font-family: arial;size:2px; text-decoration:none" href="http://localhost:9000/" target="_self">
                    Biblioteca
             </a>
-
          </div> 
         
-
-
    </body>
-
+     
 </html>
